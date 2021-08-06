@@ -2,7 +2,9 @@ const styles = {
   BookList: {
     width: "66%",
   },
-  heading: {},
+  heading: {
+    textAlign: "center",
+  },
   list: {
     display: "grid",
     gridTemplateColumns: "repeat(2, 1fr)",
