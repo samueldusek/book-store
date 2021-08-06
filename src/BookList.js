@@ -8,9 +8,9 @@ import classNames from "classnames";
 import bookCovers from "./books";
 import getRandom1to5 from "./utils";
 
-function BookList({ classes, oneRow, maxBooks }) {
+function BookList({ classes, oneCol, maxBooks }) {
   let page = 1;
-  if (oneRow) page = getRandom1to5();
+  if (oneCol) page = getRandom1to5();
   const { loading, error, data } = useQuery(GET_ALL_BOOKS, {
     variables: { page },
   });
@@ -24,13 +24,13 @@ function BookList({ classes, oneRow, maxBooks }) {
   return (
     <div
       className={classNames(classes.BookList, {
-        [classes.BookListFull]: oneRow,
+        [classes.BookListFull]: oneCol,
       })}
     >
-      {!oneRow && <h2 className={classes.heading}>Book List</h2>}
+      {!oneCol && <h2 className={classes.heading}>Book List</h2>}
       <div
         className={classNames(classes.list, {
-          [classes.oneRowList]: oneRow,
+          [classes.oneColList]: oneCol,
         })}
       >
         {books.slice(0, maxBooks).map((book, idx) => (

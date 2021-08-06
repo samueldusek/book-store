@@ -16,7 +16,7 @@ const styles = {
     columnGap: "30px",
     rowGap: "40px",
   },
-  oneRowList: {
+  oneColList: {
     gridTemplateColumns: "repeat(1, 1fr)",
   },
 };

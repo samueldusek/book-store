@@ -35,8 +35,19 @@ const styles = {
   authorName: {
     margin: "0.5rem 0px",
   },
+  chapterList: {
+    margin: "0",
+    padding: "0",
+    listStyleType: "none",
+  },
+  chapter: {
+    margin: "0.2rem 0",
+  },
   bookData: {
     margin: "0.1rem 0",
+  },
+  bookList: {
+    width: "33%",
   },
 };
 
