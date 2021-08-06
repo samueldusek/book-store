@@ -18,7 +18,10 @@ function AuthorList({ classes }) {
       <h2 className={classes.heading}>Author List</h2>
       <div className={classes.authors}>
         {authors.map((author, idx) => (
-          <AuthorCard author={{ ...author, image: authorsImgs[idx] }} />
+          <AuthorCard
+            key={idx}
+            author={{ ...author, image: authorsImgs[idx] }}
+          />
         ))}
       </div>
     </div>

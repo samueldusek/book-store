@@ -2,6 +2,9 @@ const styles = {
   BookList: {
     width: "66%",
   },
+  BookListFull: {
+    width: "100%",
+  },
   heading: {
     textAlign: "center",
     marginBottom: "3rem",
@@ -12,6 +15,9 @@ const styles = {
     gridAutoRows: "200px",
     columnGap: "30px",
     rowGap: "40px",
+  },
+  oneRowList: {
+    gridTemplateColumns: "repeat(1, 1fr)",
   },
 };
 
