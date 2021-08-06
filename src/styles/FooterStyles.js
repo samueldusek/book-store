@@ -1,14 +1,17 @@
 const styles = {
-  Navbar: {
+  Footer: {
     width: "100%",
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
+    marginTop: "2rem",
   },
   link: {
     color: "grey",
-    letterSpacing: "0.1rem",
-    textDecoration: "none",
+    "& a": {
+      textDecoration: "none",
+      color: "black",
+    },
   },
 };
 

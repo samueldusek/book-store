@@ -16,9 +16,11 @@ function AuthorList({ classes }) {
   return (
     <div className={classes.AuthorList}>
       <h2 className={classes.heading}>Author List</h2>
-      {authors.map((author, idx) => (
-        <AuthorCard author={{ ...author, image: authorsImgs[idx] }} />
-      ))}
+      <div className={classes.authors}>
+        {authors.map((author, idx) => (
+          <AuthorCard author={{ ...author, image: authorsImgs[idx] }} />
+        ))}
+      </div>
     </div>
   );
 }
