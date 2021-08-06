@@ -14,6 +14,15 @@ export const GET_ALL_BOOKS = gql`
   }
 `;
 
+export const GET_ALL_AUTHORS = gql`
+  query allAuthors {
+    authors @jsonapi(path: "/v2/authors") {
+      id
+      name
+    }
+  }
+`;
+
 export const GET_ONE_BOOK = gql`
   query getOneBook {
     author @jsonapi(path: "/v2/books/1?include=series") {

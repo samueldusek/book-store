@@ -16,7 +16,7 @@ function BookList({ classes }) {
 
   return (
     <div className={classes.BookList}>
-      <h1 className={classes.heading}>BookList</h1>
+      <h2 className={classes.heading}>Book List</h2>
       <div className={classes.list}>
         {books.map((book, idx) => (
           <BookCard book={{ ...book, cover: bookCovers[idx] }} key={book.id} />
