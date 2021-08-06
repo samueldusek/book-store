@@ -11,7 +11,7 @@ function BookList({ classes }) {
 
   if (loading) return <span>Loading</span>;
 
-  const books = data.author;
+  const { books } = data;
   console.log(books);
 
   return (
