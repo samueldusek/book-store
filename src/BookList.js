@@ -2,15 +2,13 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { GET_ALL_BOOKS } from "./queries";
 import BookCard from "./BookCard";
+import Pagination from "./Pagination";
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookListStyles";
 import classNames from "classnames";
 import bookCovers from "./books";
-import getRandom1to5 from "./utils";
 
-function BookList({ classes, oneCol, maxBooks }) {
-  let page = 1;
-  if (oneCol) page = getRandom1to5();
+function BookList({ classes, oneCol, maxBooks, page, setPage }) {
   const { loading, error, data } = useQuery(GET_ALL_BOOKS, {
     variables: { page },
   });
@@ -37,6 +35,7 @@ function BookList({ classes, oneCol, maxBooks }) {
           <BookCard book={{ ...book, cover: bookCovers[idx] }} key={book.id} />
         ))}
       </div>
+      {!oneCol && <Pagination setPage={setPage} />}
     </div>
   );
 }

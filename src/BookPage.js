@@ -6,13 +6,14 @@ import { useParams } from "react-router-dom";
 import styles from "./styles/BookPageStyles";
 import bookCovers from "./books";
 import BookList from "./BookList";
+import getRandom1to5 from "./utils";
 
 function BookPage({ classes }) {
   const { id } = useParams();
   const { loading, error, data } = useQuery(GET_BOOK, { variables: { id } });
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className={classes.BookPage}>Loading...</div>;
+
   const { book } = data;
-  console.log(book);
 
   const chapters =
     book.chapters.length === 0 ? (
@@ -53,7 +54,7 @@ function BookPage({ classes }) {
           </div>
         </div>
         <div className={classes.bookList}>
-          <BookList oneCol maxBooks={3} />
+          <BookList oneCol maxBooks={3} page={getRandom1to5()} />
         </div>
       </div>
     </div>
