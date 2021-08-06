@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookCardStyles";
 
@@ -10,8 +11,15 @@ function BookCard({ classes, book }) {
         <div className={classes.text}>
           <h3 className={classes.heading}>{book.title}</h3>
           <p className={classes.author}>{book.author.name}</p>
-          <p className={classes.date}>{book.date_published}</p>
-          <p className={classes.isbn}>{book.isbn}</p>
+          <div className={classes.footer}>
+            <div>
+              <p className={classes.date}>{book.date_published}</p>
+              <p className={classes.isbn}>{book.isbn}</p>
+            </div>
+            <Link className={classes.link} to={`/books/${book.id}`}>
+              MORE
+            </Link>
+          </div>
         </div>
       </div>
     </div>

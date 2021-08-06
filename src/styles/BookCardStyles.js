@@ -35,12 +35,27 @@ const styles = {
     color: "lightgrey",
     margin: "0",
   },
+  footer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "end",
+    "& a:hover": {
+      color: "black",
+    },
+  },
   date: {
     margin: "0.4rem 0",
   },
   isbn: {
     margin: "0px",
     color: "lightgrey",
+  },
+  link: {
+    textDecoration: "none",
+    letterSpacing: "0.1rem",
+    color: "grey",
+    borderRadius: "5px",
+    transition: "all 0.4s 0s ease-in-out",
   },
 };
 
