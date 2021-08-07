@@ -56,6 +56,8 @@ export const GET_AUTHOR = gql`
       books {
         id
         title
+        date_published
+        isbn
       }
     }
   }

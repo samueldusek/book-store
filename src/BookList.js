@@ -8,14 +8,24 @@ import styles from "./styles/BookListStyles";
 import classNames from "classnames";
 import bookCovers from "./books";
 
-function BookList({ classes, oneCol, maxBooks, page, setPage }) {
+function BookList({
+  classes,
+  oneCol,
+  maxBooks,
+  page,
+  setPage,
+  authorBooks,
+  author,
+}) {
   const { loading, error, data } = useQuery(GET_ALL_BOOKS, {
     variables: { page },
   });
-
   if (loading) return <span>Loading</span>;
 
-  const { books } = data;
+  let { books } = data;
+
+  if (authorBooks)
+    books = authorBooks.map((book) => ({ ...book, author: { name: author } }));
 
   return (
     <div

@@ -26,7 +26,7 @@ const styles = {
     marginTop: "1rem",
     "& button": {
       width: "30px",
-      height: "15px",
+      height: "20px",
       margin: "0px 0.1rem",
     },
   },
