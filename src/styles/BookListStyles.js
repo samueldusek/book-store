@@ -11,9 +11,7 @@ const styles = {
       margin: "auto",
     },
   },
-  BookListFull: {
-    width: "100%",
-  },
+
   heading: {
     marginBottom: "3rem",
   },
@@ -33,11 +31,22 @@ const styles = {
   },
   oneColList: {
     gridTemplateColumns: "repeat(1, 1fr)",
+    [getSizeMedia.down("md")]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+      rowGap: "20px",
+    },
+    [getSizeMedia.down("sm")]: {
+      gridTemplateColumns: "repeat(1, 1fr)",
+      rowGap: "20px",
+    },
   },
   warning: {
     textAlign: "center",
     margin: "0",
     lineHeight: "2rem",
+  },
+  BookListFull: {
+    width: "100%",
   },
 };
 

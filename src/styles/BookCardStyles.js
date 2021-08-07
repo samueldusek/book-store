@@ -8,10 +8,10 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    paddingLeft: "1.5em",
+    padding: "0 1rem 0 1.5rem",
     [getSizeMedia.down("sm")]: {
       borderRadius: "32px",
-      paddingLeft: "0.3rem",
+      padding: "0 0.1rem 0 0.3rem",
       boxShadow: "-4px -4px 14px #d5d5d5, 4px 4px 14px #ffffff",
     },
   },
@@ -27,8 +27,8 @@ const styles = {
     boxShadow: "-4px -4px 28px #d5d5d5, 4px 4px 28px #ffffff",
   },
   text: {
+    flexGrow: "1",
     marginLeft: "1rem",
-    width: "60%",
     display: "flex",
     flexDirection: "column",
   },

@@ -1,3 +1,5 @@
+import { getSize, getSizeMedia } from "./sizes";
+
 const styles = {
   Navbar: {
     width: "100%",
@@ -6,6 +8,10 @@ const styles = {
     alignItems: "center",
     "& a:hover": {
       color: "black",
+    },
+    [getSizeMedia.down("sm")]: {
+      width: "80%",
+      margin: "auto",
     },
   },
   link: {

@@ -54,7 +54,7 @@ function BookPage({ classes }) {
           </div>
         </div>
         <div className={classes.bookList}>
-          <BookList oneCol maxBooks={3} page={getRandom1to5()} />
+          <BookList oneCol maxBooks={4} page={getRandom1to5()} />
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" render={() => <HomePage />} />
+          <Route exact path="/book-store" render={() => <HomePage />} />
           <Route exact path="/books/:id" render={() => <BookPage />} />
           <Route exact path="/authors/:id" render={() => <AuthorPage />} />
         </Switch>
