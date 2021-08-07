@@ -1,5 +1,5 @@
 import React from "react";
-import BookList from "./BookList";
+import AuthorBookList from "./AuthorBookList";
 import getRandom1to5 from "./utils";
 import { useQuery } from "@apollo/client";
 import { GET_AUTHOR } from "./queries";
@@ -40,12 +40,7 @@ function AuthorPage({ classes }) {
           </div>
         </div>
         <div className={classes.bookList}>
-          <BookList
-            oneCol
-            authorBooks={books}
-            author={author.name}
-            page={getRandom1to5()}
-          />
+          <AuthorBookList oneCol authorBooks={books} author={author.name} />
         </div>
       </div>
       <AuthorList isRow maxAuthors={5} page={getRandom1to5()} />

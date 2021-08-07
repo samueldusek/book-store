@@ -18,6 +18,11 @@ const styles = {
   oneColList: {
     gridTemplateColumns: "repeat(1, 1fr)",
   },
+  warning: {
+    textAlign: "center",
+    margin: "0",
+    lineHeight: "2rem",
+  },
 };
 
 export default styles;

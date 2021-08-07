@@ -34,7 +34,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
         {authors.slice(0, maxAuthors).map((author, idx) => (
           <AuthorCard
             key={idx}
-            author={{ ...author, image: authorsImgs[idx] }}
+            author={{ ...author, image: authorsImgs[(author.id - 1) % 10] }}
           />
         ))}
       </div>

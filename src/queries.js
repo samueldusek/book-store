@@ -9,6 +9,7 @@ export const GET_ALL_BOOKS = gql`
       date_published
       isbn
       author {
+        id
         name
       }
     }

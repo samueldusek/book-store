@@ -34,6 +34,7 @@ const styles = {
     flexGrow: "1",
     color: "lightgrey",
     margin: "0",
+    textDecoration: "none",
   },
   footer: {
     display: "flex",
