@@ -1,3 +1,5 @@
+import { getSize, getSizeMedia } from "./sizes";
+
 const styles = {
   BookCard: {
     borderRadius: "52px",
@@ -6,11 +8,16 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    paddingLeft: "1.5em",
+    [getSizeMedia.down("sm")]: {
+      borderRadius: "32px",
+      paddingLeft: "0.3rem",
+      boxShadow: "-4px -4px 14px #d5d5d5, 4px 4px 14px #ffffff",
+    },
   },
   box: {
     width: "90%",
     height: "140px",
-    marginLeft: "3rem",
     display: "flex",
     justifyContent: "start",
   },

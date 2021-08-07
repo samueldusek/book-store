@@ -1,6 +1,15 @@
+import { getSize, getSizeMedia } from "./sizes";
+
 const styles = {
   BookList: {
-    width: "66%",
+    width: "75%",
+    [getSizeMedia.down("md")]: {
+      width: "100%",
+    },
+    [getSizeMedia.down("xs")]: {
+      width: "80%",
+      margin: "auto",
+    },
   },
   BookListFull: {
     width: "100%",
@@ -14,6 +23,13 @@ const styles = {
     gridAutoRows: "200px",
     columnGap: "30px",
     rowGap: "40px",
+    [getSizeMedia.down("sm")]: {
+      columnGap: "10px",
+    },
+    [getSizeMedia.down("xs")]: {
+      gridTemplateColumns: "repeat(1, 1fr)",
+      rowGap: "20px",
+    },
   },
   oneColList: {
     gridTemplateColumns: "repeat(1, 1fr)",
