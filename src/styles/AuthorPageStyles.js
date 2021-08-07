@@ -11,7 +11,7 @@ const styles = {
       margin: "auto",
     },
     [getSizeMedia.down("sm")]: {
-      width: "80%",
+      width: "90%",
     },
   },
   heading: {

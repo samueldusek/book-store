@@ -11,7 +11,7 @@ const styles = {
       margin: "auto",
     },
     [getSizeMedia.down("sm")]: {
-      width: "80%",
+      width: "90%",
     },
   },
   heading: {
@@ -45,15 +45,16 @@ const styles = {
   },
   bookCover: {
     maxWidth: "400px",
-    boxShadow: "-8px -8px 28px #d5d5d5, 8px 8px 28px #ffffff",
-    borderRadius: "20px",
+    "& img": {
+      width: "100%",
+      boxShadow: "-8px -8px 28px #d5d5d5, 8px 8px 28px #ffffff",
+      borderRadius: "20px",
+    },
     [getSizeMedia.down("md")]: {
       width: "50%",
-      height: "auto",
     },
     [getSizeMedia.down("sm")]: {
       width: "60%",
-      minWidth: "210px",
     },
   },
   bookInfoText: {
@@ -69,6 +70,10 @@ const styles = {
   },
   authorName: {
     margin: "0.5rem 0px",
+    "& a": {
+      textDecoration: "none",
+      color: "inherit",
+    },
   },
   chapterList: {
     margin: "0",

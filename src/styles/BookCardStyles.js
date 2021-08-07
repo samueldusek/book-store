@@ -11,7 +11,7 @@ const styles = {
     padding: "0 1rem 0 1.5rem",
     [getSizeMedia.down("md")]: {
       borderRadius: "32px",
-      padding: "0 0.1rem 0 0.3rem",
+      padding: "0 0 0 0.3rem",
       boxShadow: "-4px -4px 14px #d5d5d5, 4px 4px 14px #ffffff",
     },
   },
@@ -35,6 +35,10 @@ const styles = {
   heading: {
     margin: "0px",
     marginBottom: "0.3rem",
+    "& a": {
+      textDecoration: "none",
+      color: "inherit",
+    },
   },
   author: {
     fontWeight: "bold",

@@ -9,7 +9,9 @@ function BookCard({ classes, book }) {
       <div className={classes.box}>
         <img className={classes.image} src={book.cover} alt="Book cover" />
         <div className={classes.text}>
-          <h3 className={classes.heading}>{book.title}</h3>
+          <h3 className={classes.heading}>
+            <Link to={`/books/${book.id}`}>{book.title}</Link>
+          </h3>
           <Link to={`/authors/${book.author.id}`} className={classes.author}>
             {book.author.name}
           </Link>

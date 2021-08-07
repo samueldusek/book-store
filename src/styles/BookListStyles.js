@@ -6,14 +6,13 @@ const styles = {
     [getSizeMedia.down("md")]: {
       width: "100%",
     },
-    [getSizeMedia.down("xs")]: {
-      width: "80%",
-      margin: "auto",
-    },
   },
 
   heading: {
     marginBottom: "3rem",
+    [getSizeMedia.down("md")]: {
+      marginBottom: "2rem",
+    },
   },
   headingOneCol: {
     [getSizeMedia.down("md")]: {

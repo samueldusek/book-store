@@ -28,20 +28,20 @@ function AuthorBookList({ classes, oneCol, authorBooks, author }) {
       >
         Author's books
       </h2>
-      <div
-        className={classNames(classes.list, {
-          [classes.oneColList]: oneCol,
-        })}
-      >
-        {areBooks &&
-          books.map((book, idx) => <BookCard book={book} key={book.id} />)}
-        {!areBooks && (
-          <p className={classes.warning}>
-            We do not have any books from {author}. <br />
-            But our team is working on it!
-          </p>
-        )}
-      </div>
+      {areBooks ? (
+        <div
+          className={classNames(classes.list, { [classes.oneColList]: oneCol })}
+        >
+          {books.map((book, idx) => (
+            <BookCard book={book} key={book.id} />
+          ))}
+        </div>
+      ) : (
+        <p className={classes.warning}>
+          We do not have any books from {author}. <br />
+          But our team is working on it!
+        </p>
+      )}
     </div>
   );
 }

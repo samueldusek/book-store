@@ -7,6 +7,11 @@ const styles = {
     display: "flex",
     [getSizeMedia.down("md")]: {
       flexDirection: "column",
+      width: "96%",
+      margin: "auto",
+    },
+    [getSizeMedia.down("sm")]: {
+      width: "90%",
     },
   },
 };

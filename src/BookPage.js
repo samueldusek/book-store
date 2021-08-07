@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/styles";
 import { useQuery } from "@apollo/client";
 import { GET_BOOK } from "./queries";
@@ -33,15 +34,17 @@ function BookPage({ classes }) {
       <h1 className={classes.heading}>{book.title}</h1>
       <div className={classes.main}>
         <div className={classes.bookInfo}>
-          <img
-            className={classes.bookCover}
-            src={bookCovers[(id - 1) % 10]}
-            alt="Book cover"
-          />
+          <div className={classes.bookCover}>
+            <img src={bookCovers[(id - 1) % 10]} alt="Book cover" />
+          </div>
           <div className={classes.bookInfoText}>
             <div className={classes.author}>
               <h4 className={classes.infoHeading}>Author</h4>
-              <h2 className={classes.authorName}>{book.author.name}</h2>
+              <h2 className={classes.authorName}>
+                <Link to={`/authors/${book.author.id}`}>
+                  {book.author.name}
+                </Link>
+              </h2>
             </div>
             <div className={classes.data}>
               <h4 className={classes.infoHeading}>Chapters</h4>
