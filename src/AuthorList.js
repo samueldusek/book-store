@@ -5,9 +5,12 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./styles/AuthorListStyles";
 import authorsImgs from "./authors";
 import AuthorCard from "./AuthorCard";
+import Pagination from "./Pagination";
 
-function AuthorList({ classes }) {
-  const { loading, error, data } = useQuery(GET_ALL_AUTHORS);
+function AuthorList({ classes, setPage, page }) {
+  const { loading, error, data } = useQuery(GET_ALL_AUTHORS, {
+    variables: { page },
+  });
 
   if (loading) return <div>Loading</div>;
 
@@ -24,6 +27,7 @@ function AuthorList({ classes }) {
           />
         ))}
       </div>
+      <Pagination setPage={setPage} isSmall />
     </div>
   );
 }

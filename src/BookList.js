@@ -16,8 +16,6 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
   if (loading) return <span>Loading</span>;
 
   const { books } = data;
-  console.log(books);
-  console.log(maxBooks);
 
   return (
     <div

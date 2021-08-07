@@ -36,8 +36,9 @@ export const GET_BOOK = gql`
 `;
 
 export const GET_ALL_AUTHORS = gql`
-  query allAuthors {
-    authors @jsonapi(path: "/v2/authors") {
+  query allAuthors($page: String!) {
+    authors(page: $page)
+      @jsonapi(path: "/v2/authors?page[number]={args.page}") {
       id
       name
     }

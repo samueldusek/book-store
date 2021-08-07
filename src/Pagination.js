@@ -1,10 +1,15 @@
 import React from "react";
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/PaginationStyles";
+import classNames from "classnames";
 
-function Pagination({ setPage, classes }) {
+function Pagination({ setPage, classes, isSmall }) {
   return (
-    <ul className={classes.Pagination}>
+    <ul
+      className={classNames(classes.Pagination, {
+        [classes.PaginationSmall]: isSmall,
+      })}
+    >
       <li>
         <button onClick={() => setPage(1)}>1</button>
       </li>

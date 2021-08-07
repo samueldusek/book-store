@@ -22,6 +22,14 @@ const styles = {
       color: "black",
     },
   },
+  PaginationSmall: {
+    marginTop: "1rem",
+    "& button": {
+      width: "30px",
+      height: "15px",
+      margin: "0px 0.1rem",
+    },
+  },
 };
 
 export default styles;
