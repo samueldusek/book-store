@@ -1,4 +1,5 @@
 import React from "react";
+import { Redirect } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_ALL_AUTHORS } from "./queries";
 import { withStyles } from "@material-ui/styles";
@@ -13,9 +14,12 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
     variables: { page },
   });
 
-  if (loading) return <div>Loading</div>;
+  let authors = {};
 
-  const { authors } = data;
+  if (!loading) {
+    if (error) return <Redirect to="/error" />;
+    authors = data.authors;
+  }
 
   return (
     <div
@@ -26,18 +30,24 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
       <h2 className={classes.heading}>
         {isRow ? "Other top autors" : "Top Authors"}
       </h2>
-      <div
-        className={classNames(classes.authors, {
-          [classes.authorsRow]: isRow,
-        })}
-      >
-        {authors.slice(0, maxAuthors).map((author, idx) => (
-          <AuthorCard
-            key={idx}
-            author={{ ...author, image: authorsImgs[(author.id - 1) % 10] }}
-          />
-        ))}
-      </div>
+
+      {loading ? (
+        <span>Loading..</span>
+      ) : (
+        <div
+          className={classNames(classes.authors, {
+            [classes.authorsRow]: isRow,
+          })}
+        >
+          {authors.slice(0, maxAuthors).map((author, idx) => (
+            <AuthorCard
+              key={idx}
+              author={{ ...author, image: authorsImgs[(author.id - 1) % 10] }}
+            />
+          ))}
+        </div>
+      )}
+
       {!isRow && <Pagination setPage={setPage} page={page} isSmall />}
     </div>
   );

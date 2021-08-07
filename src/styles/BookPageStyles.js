@@ -1,4 +1,4 @@
-import { getSize, getSizeMedia } from "./sizes";
+import { getSizeMedia } from "./sizes";
 
 const styles = {
   BookPage: {
@@ -38,6 +38,9 @@ const styles = {
     width: "66%",
     height: "min-content",
     display: "flex",
+    [getSizeMedia.down("lg")]: {
+      width: "55%",
+    },
     [getSizeMedia.down("md")]: {
       width: "100%",
       marginBottom: "2rem",
@@ -88,8 +91,14 @@ const styles = {
   },
   bookList: {
     width: "33%",
+    marginLeft: "1%",
+    [getSizeMedia.down("lg")]: {
+      width: "40%",
+      marginLeft: "5%",
+    },
     [getSizeMedia.down("md")]: {
       width: "100%",
+      marginLeft: "0%",
     },
   },
 };

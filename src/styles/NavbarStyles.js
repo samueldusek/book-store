@@ -1,4 +1,4 @@
-import { getSize, getSizeMedia } from "./sizes";
+import { getSizeMedia } from "./sizes";
 
 const styles = {
   Navbar: {
