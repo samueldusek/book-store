@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/book-store/static/css/main.203e7708.chunk.css",
+    "main.js": "/book-store/static/js/main.dbb64cf9.chunk.js",
+    "main.js.map": "/book-store/static/js/main.dbb64cf9.chunk.js.map",
+    "runtime-main.js": "/book-store/static/js/runtime-main.7e3e185f.js",
+    "runtime-main.js.map": "/book-store/static/js/runtime-main.7e3e185f.js.map",
+    "static/js/2.1030469a.chunk.js": "/book-store/static/js/2.1030469a.chunk.js",
+    "static/js/2.1030469a.chunk.js.map": "/book-store/static/js/2.1030469a.chunk.js.map",
+    "static/js/3.50c6da73.chunk.js": "/book-store/static/js/3.50c6da73.chunk.js",
+    "static/js/3.50c6da73.chunk.js.map": "/book-store/static/js/3.50c6da73.chunk.js.map",
+    "index.html": "/book-store/index.html",
+    "static/css/main.203e7708.chunk.css.map": "/book-store/static/css/main.203e7708.chunk.css.map",
+    "static/js/2.1030469a.chunk.js.LICENSE.txt": "/book-store/static/js/2.1030469a.chunk.js.LICENSE.txt",
+    "static/media/author1.83cd0fc1.svg": "/book-store/static/media/author1.83cd0fc1.svg",
+    "static/media/author10.fffefab0.svg": "/book-store/static/media/author10.fffefab0.svg",
+    "static/media/author2.eac1db68.svg": "/book-store/static/media/author2.eac1db68.svg",
+    "static/media/author3.11efdf58.svg": "/book-store/static/media/author3.11efdf58.svg",
+    "static/media/author4.1342572c.svg": "/book-store/static/media/author4.1342572c.svg",
+    "static/media/author5.9c7e2719.svg": "/book-store/static/media/author5.9c7e2719.svg",
+    "static/media/author6.67fd8903.svg": "/book-store/static/media/author6.67fd8903.svg",
+    "static/media/author7.58538311.svg": "/book-store/static/media/author7.58538311.svg",
+    "static/media/author8.c79d30eb.svg": "/book-store/static/media/author8.c79d30eb.svg",
+    "static/media/author9.6ef14e43.svg": "/book-store/static/media/author9.6ef14e43.svg",
+    "static/media/books1.e3722769.png": "/book-store/static/media/books1.e3722769.png",
+    "static/media/books10.a94da1dc.png": "/book-store/static/media/books10.a94da1dc.png",
+    "static/media/books2.afac0524.png": "/book-store/static/media/books2.afac0524.png",
+    "static/media/books3.b37b0541.png": "/book-store/static/media/books3.b37b0541.png",
+    "static/media/books4.64ec885f.png": "/book-store/static/media/books4.64ec885f.png",
+    "static/media/books5.9ec4f05e.png": "/book-store/static/media/books5.9ec4f05e.png",
+    "static/media/books6.512c5fea.png": "/book-store/static/media/books6.512c5fea.png",
+    "static/media/books7.fc605bd2.png": "/book-store/static/media/books7.fc605bd2.png",
+    "static/media/books8.8bd0b444.png": "/book-store/static/media/books8.8bd0b444.png",
+    "static/media/books9.b1eeabc4.png": "/book-store/static/media/books9.b1eeabc4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e3e185f.js",
+    "static/js/2.1030469a.chunk.js",
+    "static/css/main.203e7708.chunk.css",
+    "static/js/main.dbb64cf9.chunk.js"
+  ]
+}
