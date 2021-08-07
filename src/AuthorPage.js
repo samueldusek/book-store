@@ -1,7 +1,7 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import AuthorBookList from "./AuthorBookList";
-import getRandom1to5 from "./utils";
+import { getRandom1to5, getHumanReadibleDate } from "./utils";
 import { useQuery } from "@apollo/client";
 import { GET_AUTHOR } from "./queries";
 import { useParams } from "react-router-dom";
@@ -43,9 +43,13 @@ function AuthorPage({ classes }) {
                 </div>
                 <div className={classes.data}>
                   <h4 className={classes.infoHeading}>Born</h4>
-                  <h3 className={classes.authorData}>{author.date_of_birth}</h3>
+                  <h3 className={classes.authorData}>
+                    {getHumanReadibleDate(author.date_of_birth)}
+                  </h3>
                   <h4 className={classes.infoHeading}>Passed</h4>
-                  <h3 className={classes.authorData}>{author.date_of_death}</h3>
+                  <h3 className={classes.authorData}>
+                    {getHumanReadibleDate(author.date_of_death)}
+                  </h3>
                 </div>
               </div>
             </div>

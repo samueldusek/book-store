@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import styles from "./styles/BookPageStyles";
 import bookCovers from "./books";
 import BookList from "./BookList";
-import getRandom1to5 from "./utils";
+import { getRandom1to5, getHumanReadibleDate } from "./utils";
 
 function BookPage({ classes }) {
   const { id } = useParams();
@@ -58,7 +58,9 @@ function BookPage({ classes }) {
                   <h4 className={classes.infoHeading}>Chapters</h4>
                   {chapters}
                   <h4 className={classes.infoHeading}>Published</h4>
-                  <h3 className={classes.bookData}>{book.date_published}</h3>
+                  <h3 className={classes.bookData}>
+                    {getHumanReadibleDate(book.date_published)}
+                  </h3>
                   <h4 className={classes.infoHeading}>ISBN</h4>
                   <h3 className={classes.bookData}>{book.isbn}</h3>
                 </div>
