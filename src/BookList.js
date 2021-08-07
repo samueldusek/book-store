@@ -38,7 +38,7 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
           />
         ))}
       </div>
-      {!oneCol && <Pagination setPage={setPage} />}
+      {!oneCol && <Pagination setPage={setPage} page={page} />}
     </div>
   );
 }

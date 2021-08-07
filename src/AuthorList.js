@@ -38,7 +38,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
           />
         ))}
       </div>
-      {!isRow && <Pagination setPage={setPage} isSmall />}
+      {!isRow && <Pagination setPage={setPage} page={page} isSmall />}
     </div>
   );
 }
