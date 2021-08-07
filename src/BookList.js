@@ -25,7 +25,9 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
         [classes.BookListFull]: oneCol,
       })}
     >
-      {!oneCol && <h2 className={classes.heading}>Book List</h2>}
+      {!oneCol && (
+        <h2 className={classes.heading}>Find your new favourite book</h2>
+      )}
       <div
         className={classNames(classes.list, {
           [classes.oneColList]: oneCol,

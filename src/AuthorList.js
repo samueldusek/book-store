@@ -15,7 +15,7 @@ function AuthorList({ classes }) {
 
   return (
     <div className={classes.AuthorList}>
-      <h2 className={classes.heading}>Author List</h2>
+      <h2 className={classes.heading}>Top Authors</h2>
       <div className={classes.authors}>
         {authors.map((author, idx) => (
           <AuthorCard

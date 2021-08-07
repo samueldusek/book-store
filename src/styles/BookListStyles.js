@@ -6,7 +6,6 @@ const styles = {
     width: "100%",
   },
   heading: {
-    textAlign: "center",
     marginBottom: "3rem",
   },
   list: {

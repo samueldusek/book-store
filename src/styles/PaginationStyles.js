@@ -15,6 +15,7 @@ const styles = {
       background: "#f5f5f5",
       boxShadow: "-4px -4px 20px #d5d5d5, 4px 4px 20px #ffffff",
       color: "grey",
+      transition: "all 0.4s 0s ease-in-out",
     },
     "& button:hover": {
       cursor: "pointer",
