@@ -21,7 +21,13 @@ function AuthorBookList({ classes, oneCol, authorBooks, author }) {
         [classes.BookListFull]: oneCol,
       })}
     >
-      <h2 className={classes.heading}>Author's books</h2>
+      <h2
+        className={classNames(classes.heading, {
+          [classes.headingOneCol]: oneCol,
+        })}
+      >
+        Author's books
+      </h2>
       <div
         className={classNames(classes.list, {
           [classes.oneColList]: oneCol,

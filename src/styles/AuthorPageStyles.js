@@ -1,26 +1,54 @@
+import { getSize, getSizeMedia } from "./sizes";
+
 const styles = {
   AuthorPage: {
     flexGrow: 1,
     width: "100%",
     display: "flex",
     flexDirection: "column",
+    [getSizeMedia.down("md")]: {
+      width: "96%",
+      margin: "auto",
+    },
+    [getSizeMedia.down("sm")]: {
+      width: "80%",
+    },
   },
   heading: {
     fontSize: "4.2rem",
     margin: "1rem 0px 3rem 0px",
+    [getSizeMedia.down("md")]: {
+      fontSize: "3.2rem",
+      marginBottom: "1.5rem",
+    },
+    [getSizeMedia.down("sm")]: {
+      fontSize: "2.6rem",
+      marginBottom: "1.2rem",
+    },
   },
   main: {
     display: "flex",
     marginBottom: "4rem",
+    [getSizeMedia.down("md")]: {
+      flexDirection: "column",
+      justifyContent: "center",
+      marginBottom: "1rem",
+    },
   },
   authorInfo: {
-    width: "66%",
+    width: "54%",
+    marginRight: "2%",
     display: "flex",
+    height: "min-content",
+    [getSizeMedia.down("md")]: {
+      width: "100%",
+      marginRight: "0%",
+    },
   },
   image: {
-    width: "400px",
+    width: "50%",
+    maxWidth: "400px",
     filter: "drop-shadow(10px 10px 10px grey)",
-    borderRadius: "20px",
   },
   authorInfoText: {
     marginLeft: "2rem",
@@ -40,7 +68,10 @@ const styles = {
     margin: "0.1rem 0",
   },
   bookList: {
-    width: "33%",
+    width: "43%",
+    [getSizeMedia.down("md")]: {
+      width: "100%",
+    },
   },
 };
 

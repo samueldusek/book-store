@@ -16,15 +16,16 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
 
   let { books } = data;
 
+  const title = oneCol ? "Have you read these?" : "Find your new favorite book";
+
   return (
     <div
       className={classNames(classes.BookList, {
         [classes.BookListFull]: oneCol,
       })}
     >
-      {!oneCol && (
-        <h2 className={classes.heading}>Find your new favorite book</h2>
-      )}
+      <h2 className={classes.heading}>{title}</h2>
+
       <div
         className={classNames(classes.list, {
           [classes.oneColList]: oneCol,

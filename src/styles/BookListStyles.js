@@ -15,6 +15,11 @@ const styles = {
   heading: {
     marginBottom: "3rem",
   },
+  headingOneCol: {
+    [getSizeMedia.down("md")]: {
+      margin: "3rem 0 1rem 0",
+    },
+  },
   list: {
     display: "grid",
     gridTemplateColumns: "repeat(2, 1fr)",

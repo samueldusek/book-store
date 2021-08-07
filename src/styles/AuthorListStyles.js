@@ -47,6 +47,10 @@ const styles = {
     marginLeft: "0%",
     columnGap: "1%",
     gridTemplateColumns: "repeat(5, 1fr)",
+    [getSizeMedia.down("xs")]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+      rowGap: "15px",
+    },
   },
 };
 
