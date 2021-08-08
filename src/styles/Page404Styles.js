@@ -6,13 +6,6 @@ const styles = {
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    [getSizeMedia.down("md")]: {
-      width: "96%",
-      margin: "auto",
-    },
-    [getSizeMedia.down("sm")]: {
-      width: "80%",
-    },
   },
   heading: {
     fontSize: "4.2rem",

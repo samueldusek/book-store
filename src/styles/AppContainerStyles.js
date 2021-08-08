@@ -7,12 +7,13 @@ const styles = {
     maxWidth: getSize("lg"),
     margin: "auto",
     height: "100vh",
-    padding: "0 2rem",
+    width: "98%",
     [getSizeMedia.down("lg")]: {
       maxWidth: getSize("md"),
     },
-    [getSizeMedia.down("sm")]: {
-      padding: "0 0.3rem",
+    [getSizeMedia.down("md")]: {
+      width: "92%",
+      margin: "auto",
     },
   },
 };

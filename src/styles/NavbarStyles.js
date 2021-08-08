@@ -13,10 +13,6 @@ const styles = {
       textDecoration: "none",
       color: "black",
     },
-    [getSizeMedia.down("sm")]: {
-      width: "80%",
-      margin: "auto",
-    },
   },
   link: {
     color: "grey",
