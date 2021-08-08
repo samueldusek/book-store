@@ -1,5 +1,4 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
 import BookCard from "./BookCard";
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookListStyles";

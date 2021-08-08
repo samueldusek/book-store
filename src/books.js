@@ -9,7 +9,7 @@ import book8 from "./images/books/books8.png";
 import book9 from "./images/books/books9.png";
 import book10 from "./images/books/books10.png";
 
-export default [
+const books = [
   book1,
   book2,
   book3,
@@ -21,3 +21,5 @@ export default [
   book9,
   book10,
 ];
+
+export default books;

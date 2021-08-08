@@ -32,7 +32,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
       </h2>
 
       {loading ? (
-        <span>Loading..</span>
+        <span>Loading.. 🔄</span>
       ) : (
         <div
           className={classNames(classes.authors, {

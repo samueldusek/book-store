@@ -17,7 +17,7 @@ function BookPage({ classes }) {
   let chapters = {};
 
   if (!loading) {
-    if (error) return <Redirect to="/error" />;
+    if (error) return <Redirect to="/book-store/somethingwentwrong" />;
     book = data.book;
     chapters =
       book.chapters.length === 0 ? (
@@ -36,7 +36,7 @@ function BookPage({ classes }) {
   return (
     <main className={classes.BookPage}>
       {loading ? (
-        <span>Loading..</span>
+        <span>Loading.. 🔄</span>
       ) : (
         <>
           <h1 className={classes.heading}>{book.title}</h1>

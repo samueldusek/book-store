@@ -16,14 +16,14 @@ function AuthorPage({ classes }) {
   let author = {};
   let books = {};
   if (!loading) {
-    if (error) return <Redirect to="/book-store/error" />;
+    if (error) return <Redirect to="/book-store/somethingwentwrong" />;
     author = data.author;
     books = author.books;
   }
   return (
     <main className={classes.AuthorPage}>
       {loading ? (
-        <span>Loading..</span>
+        <span>Loading.. 🔄</span>
       ) : (
         <>
           <h1 className={classes.heading}>{author.name}</h1>
@@ -32,7 +32,7 @@ function AuthorPage({ classes }) {
               <img
                 className={classes.image}
                 src={authorsImgs[(id - 1) % 10]}
-                alt={`${author.name}'s picture`}
+                alt={`${author.name}'s avatar.`}
               />
               <div className={classes.authorInfoText}>
                 <div className={classes.author}>

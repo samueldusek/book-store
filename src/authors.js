@@ -9,7 +9,7 @@ import author8 from "./images/authors/author8.svg";
 import author9 from "./images/authors/author9.svg";
 import author10 from "./images/authors/author10.svg";
 
-export default [
+const authors = [
   author1,
   author2,
   author3,
@@ -21,3 +21,5 @@ export default [
   author9,
   author10,
 ];
+
+export default authors;

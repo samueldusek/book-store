@@ -9,7 +9,7 @@ function AuthorCard({ classes, author }) {
       <Link to={`/book-store/authors/${author.id}`}>
         <img
           src={author.image}
-          alt="Author's image"
+          alt="Author's avatar."
           className={classes.image}
         />
         <p className={classes.name}>{author.name}</p>

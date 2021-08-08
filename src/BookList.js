@@ -32,7 +32,7 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
       <h2 className={classes.heading}>{title}</h2>
 
       {loading ? (
-        <span>Loading..</span>
+        <span>Loading.. 🔄</span>
       ) : (
         <div
           className={classNames(classes.list, {

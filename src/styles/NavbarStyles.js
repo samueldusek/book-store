@@ -1,5 +1,3 @@
-import { getSizeMedia } from "./sizes";
-
 const styles = {
   Navbar: {
     width: "100%",
