@@ -6,7 +6,7 @@ import styles from "./styles/AuthorCardStyles";
 function AuthorCard({ classes, author }) {
   return (
     <div className={classes.AuthorCard}>
-      <Link to={`/authors/${author.id}`}>
+      <Link to={`/book-store/authors/${author.id}`}>
         <img
           src={author.image}
           alt="Author's image"

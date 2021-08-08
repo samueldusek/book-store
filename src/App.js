@@ -15,8 +15,16 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => <HomePage />} />
           <Route exact path="/book-store" render={() => <HomePage />} />
-          <Route exact path="/books/:id" render={() => <BookPage />} />
-          <Route exact path="/authors/:id" render={() => <AuthorPage />} />
+          <Route
+            exact
+            path="/book-store/books/:id"
+            render={() => <BookPage />}
+          />
+          <Route
+            exact
+            path="/book-store/authors/:id"
+            render={() => <AuthorPage />}
+          />
           <Route exact path="/*" render={() => <Page404 />} />
         </Switch>
         <Footer />

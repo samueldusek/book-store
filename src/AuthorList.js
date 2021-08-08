@@ -17,7 +17,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
   let authors = {};
 
   if (!loading) {
-    if (error) return <Redirect to="/error" />;
+    if (error) return <Redirect to="/book-store/error" />;
     authors = data.authors;
   }
 

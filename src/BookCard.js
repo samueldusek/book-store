@@ -11,9 +11,12 @@ function BookCard({ classes, book }) {
         <img className={classes.image} src={book.cover} alt="Book cover" />
         <div className={classes.text}>
           <h3 className={classes.heading}>
-            <Link to={`/books/${book.id}`}>{book.title}</Link>
+            <Link to={`/book-store/books/${book.id}`}>{book.title}</Link>
           </h3>
-          <Link to={`/authors/${book.author.id}`} className={classes.author}>
+          <Link
+            to={`/book-store/authors/${book.author.id}`}
+            className={classes.author}
+          >
             {book.author.name}
           </Link>
           <div className={classes.footer}>
@@ -23,7 +26,7 @@ function BookCard({ classes, book }) {
               </p>
               <p className={classes.isbn}>{book.isbn}</p>
             </div>
-            <Link className={classes.link} to={`/books/${book.id}`}>
+            <Link className={classes.link} to={`/book-store/books/${book.id}`}>
               MORE
             </Link>
           </div>

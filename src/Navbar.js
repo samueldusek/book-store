@@ -7,9 +7,9 @@ function Navbar({ classes }) {
   return (
     <nav className={classes.Navbar}>
       <h2 className={classes.heading}>
-        <Link to="/">📚 Book Store</Link>
+        <Link to="/book-store">📚 Book Store</Link>
       </h2>
-      <Link to="/" className={classes.link}>
+      <Link to="/book-store" className={classes.link}>
         HOME
       </Link>
     </nav>

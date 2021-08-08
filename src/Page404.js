@@ -13,7 +13,7 @@ function Page404({ classes }) {
           But, do not worry. <br />
           Just click on books bellow.
         </p>
-        <Link to="/">
+        <Link to="/book-store">
           <img src={img} alt="Books" />
         </Link>
       </div>

@@ -16,7 +16,7 @@ function AuthorPage({ classes }) {
   let author = {};
   let books = {};
   if (!loading) {
-    if (error) return <Redirect to="/error" />;
+    if (error) return <Redirect to="/book-store/error" />;
     author = data.author;
     books = author.books;
   }

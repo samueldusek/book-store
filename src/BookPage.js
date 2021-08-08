@@ -49,7 +49,7 @@ function BookPage({ classes }) {
                 <div className={classes.author}>
                   <h4 className={classes.infoHeading}>Author</h4>
                   <h2 className={classes.authorName}>
-                    <Link to={`/authors/${book.author.id}`}>
+                    <Link to={`/book-store/authors/${book.author.id}`}>
                       {book.author.name}
                     </Link>
                   </h2>
