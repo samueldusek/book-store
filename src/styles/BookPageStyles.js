@@ -26,7 +26,7 @@ const styles = {
       marginBottom: "1.2rem",
     },
   },
-  main: {
+  bookSection: {
     display: "flex",
     width: "100%",
     [getSizeMedia.down("md")]: {

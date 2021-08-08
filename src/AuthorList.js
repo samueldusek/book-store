@@ -22,7 +22,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
   }
 
   return (
-    <div
+    <section
       className={classNames(classes.AuthorList, {
         [classes.AuthorListRow]: isRow,
       })}
@@ -49,7 +49,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
       )}
 
       {!isRow && <Pagination setPage={setPage} page={page} isSmall />}
-    </div>
+    </section>
   );
 }
 

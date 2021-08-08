@@ -9,6 +9,10 @@ const styles = {
     "& a:hover": {
       color: "black",
     },
+    "& h2 a": {
+      textDecoration: "none",
+      color: "black",
+    },
     [getSizeMedia.down("sm")]: {
       width: "80%",
       margin: "auto",

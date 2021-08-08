@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookCardStyles";
-import { getHumanReadibleDate } from "./utils";
+import { getHumanReadableDate } from "./utils";
 
 function BookCard({ classes, book }) {
   return (
@@ -19,7 +19,7 @@ function BookCard({ classes, book }) {
           <div className={classes.footer}>
             <div>
               <p className={classes.date}>
-                {getHumanReadibleDate(book.date_published)}
+                {getHumanReadableDate(book.date_published)}
               </p>
               <p className={classes.isbn}>{book.isbn}</p>
             </div>

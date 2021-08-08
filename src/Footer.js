@@ -5,12 +5,12 @@ import styles from "./styles/FooterStyles";
 
 function Footer({ classes }) {
   return (
-    <div className={classes.Footer}>
+    <footer className={classes.Footer}>
       <p className={classes.link}>
         Created by <Link to="https://github.com/samueldusek">Samuel Dušek</Link>
         .
       </p>
-    </div>
+    </footer>
   );
 }
 

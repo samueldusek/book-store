@@ -1,7 +1,7 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import AuthorBookList from "./AuthorBookList";
-import { getRandom1to5, getHumanReadibleDate } from "./utils";
+import { getRandom1to5, getHumanReadableDate } from "./utils";
 import { useQuery } from "@apollo/client";
 import { GET_AUTHOR } from "./queries";
 import { useParams } from "react-router-dom";
@@ -21,13 +21,13 @@ function AuthorPage({ classes }) {
     books = author.books;
   }
   return (
-    <div className={classes.AuthorPage}>
+    <main className={classes.AuthorPage}>
       {loading ? (
         <span>Loading..</span>
       ) : (
         <>
           <h1 className={classes.heading}>{author.name}</h1>
-          <div className={classes.main}>
+          <section className={classes.authorSection}>
             <div className={classes.authorInfo}>
               <img
                 className={classes.image}
@@ -44,11 +44,11 @@ function AuthorPage({ classes }) {
                 <div className={classes.data}>
                   <h4 className={classes.infoHeading}>Born</h4>
                   <h3 className={classes.authorData}>
-                    {getHumanReadibleDate(author.date_of_birth)}
+                    {getHumanReadableDate(author.date_of_birth)}
                   </h3>
                   <h4 className={classes.infoHeading}>Passed</h4>
                   <h3 className={classes.authorData}>
-                    {getHumanReadibleDate(author.date_of_death)}
+                    {getHumanReadableDate(author.date_of_death)}
                   </h3>
                 </div>
               </div>
@@ -56,11 +56,11 @@ function AuthorPage({ classes }) {
             <div className={classes.bookList}>
               <AuthorBookList oneCol authorBooks={books} author={author.name} />
             </div>
-          </div>
+          </section>
           <AuthorList isRow maxAuthors={5} page={getRandom1to5()} />
         </>
       )}
-    </div>
+    </main>
   );
 }
 

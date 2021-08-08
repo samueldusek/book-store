@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import styles from "./styles/BookPageStyles";
 import bookCovers from "./books";
 import BookList from "./BookList";
-import { getRandom1to5, getHumanReadibleDate } from "./utils";
+import { getRandom1to5, getHumanReadableDate } from "./utils";
 
 function BookPage({ classes }) {
   const { id } = useParams();
@@ -34,13 +34,13 @@ function BookPage({ classes }) {
   }
 
   return (
-    <div className={classes.BookPage}>
+    <main className={classes.BookPage}>
       {loading ? (
         <span>Loading..</span>
       ) : (
         <>
           <h1 className={classes.heading}>{book.title}</h1>
-          <div className={classes.main}>
+          <section className={classes.bookSection}>
             <div className={classes.bookInfo}>
               <div className={classes.bookCover}>
                 <img src={bookCovers[(id - 1) % 10]} alt="Book cover" />
@@ -59,7 +59,7 @@ function BookPage({ classes }) {
                   {chapters}
                   <h4 className={classes.infoHeading}>Published</h4>
                   <h3 className={classes.bookData}>
-                    {getHumanReadibleDate(book.date_published)}
+                    {getHumanReadableDate(book.date_published)}
                   </h3>
                   <h4 className={classes.infoHeading}>ISBN</h4>
                   <h3 className={classes.bookData}>{book.isbn}</h3>
@@ -69,10 +69,10 @@ function BookPage({ classes }) {
             <div className={classes.bookList}>
               <BookList oneCol maxBooks={4} page={getRandom1to5()} />
             </div>
-          </div>
+          </section>
         </>
       )}
-    </div>
+    </main>
   );
 }
 

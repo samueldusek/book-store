@@ -4,63 +4,29 @@ import styles from "./styles/PaginationStyles";
 import classNames from "classnames";
 
 function Pagination({ setPage, classes, isSmall, page }) {
+  const buttons = [];
+
+  for (let idx = 1; idx <= 5; idx++) {
+    buttons.push(
+      <button
+        className={classNames(classes.btn, {
+          [classes.active]: page === idx,
+        })}
+        onClick={() => setPage(idx)}
+      >
+        {idx}
+      </button>
+    );
+  }
+
   return (
-    <ul
+    <nav
       className={classNames(classes.Pagination, {
         [classes.PaginationSmall]: isSmall,
       })}
     >
-      <li>
-        <button
-          className={classNames(classes.btn, {
-            [classes.active]: page === 1,
-          })}
-          onClick={() => setPage(1)}
-        >
-          1
-        </button>
-      </li>
-      <li>
-        <button
-          className={classNames(classes.btn, {
-            [classes.active]: page === 2,
-          })}
-          onClick={() => setPage(2)}
-        >
-          2
-        </button>
-      </li>
-      <li>
-        <button
-          className={classNames(classes.btn, {
-            [classes.active]: page === 3,
-          })}
-          onClick={() => setPage(3)}
-        >
-          3
-        </button>
-      </li>
-      <li>
-        <button
-          className={classNames(classes.btn, {
-            [classes.active]: page === 4,
-          })}
-          onClick={() => setPage(4)}
-        >
-          4
-        </button>
-      </li>
-      <li>
-        <button
-          className={classNames(classes.btn, {
-            [classes.active]: page === 5,
-          })}
-          onClick={() => setPage(5)}
-        >
-          5
-        </button>
-      </li>
-    </ul>
+      {buttons}
+    </nav>
   );
 }
 

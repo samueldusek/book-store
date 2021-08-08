@@ -5,12 +5,14 @@ import styles from "./styles/NavbarStyles";
 
 function Navbar({ classes }) {
   return (
-    <div className={classes.Navbar}>
-      <h2 className={classes.heading}>📚 Book Store</h2>
+    <nav className={classes.Navbar}>
+      <h2 className={classes.heading}>
+        <Link to="/">📚 Book Store</Link>
+      </h2>
       <Link to="/" className={classes.link}>
         HOME
       </Link>
-    </div>
+    </nav>
   );
 }
 

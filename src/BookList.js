@@ -24,7 +24,7 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
   const title = oneCol ? "Have you read these?" : "Find your new favorite book";
 
   return (
-    <div
+    <section
       className={classNames(classes.BookList, {
         [classes.BookListFull]: oneCol,
       })}
@@ -49,7 +49,7 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
       )}
 
       {!oneCol && <Pagination setPage={setPage} page={page} />}
-    </div>
+    </section>
   );
 }
 

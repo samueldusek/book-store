@@ -26,7 +26,7 @@ const styles = {
       marginBottom: "1.2rem",
     },
   },
-  main: {
+  authorSection: {
     display: "flex",
     marginBottom: "4rem",
     [getSizeMedia.down("md")]: {

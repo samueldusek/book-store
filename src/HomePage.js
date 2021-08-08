@@ -8,10 +8,10 @@ function HomePage({ classes }) {
   const [bookPage, setBookPage] = useState(1);
   const [authorPage, setAuthorPage] = useState(1);
   return (
-    <div className={classes.HomePage}>
+    <main className={classes.HomePage}>
       <BookList page={bookPage} setPage={setBookPage} />
       <AuthorList page={authorPage} setPage={setAuthorPage} />
-    </div>
+    </main>
   );
 }
 

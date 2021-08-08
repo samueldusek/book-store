@@ -16,7 +16,7 @@ function AuthorBookList({ classes, oneCol, authorBooks, author }) {
   const areBooks = books.length === 0 ? false : true;
 
   return (
-    <div
+    <section
       className={classNames(classes.BookList, {
         [classes.BookListFull]: oneCol,
       })}
@@ -38,11 +38,11 @@ function AuthorBookList({ classes, oneCol, authorBooks, author }) {
         </div>
       ) : (
         <p className={classes.warning}>
-          We do not have any books from {author}. <br />
+          We do not have any books from <strong>{author}</strong>. <br />
           But our team is working on it!
         </p>
       )}
-    </div>
+    </section>
   );
 }
 
