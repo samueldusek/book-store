@@ -1,14 +1,17 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
-import { withStyles } from "@material-ui/styles";
-import { useQuery } from "@apollo/client";
-import { GET_BOOK } from "./queries";
-import { useParams } from "react-router-dom";
-import styles from "./styles/BookPageStyles";
-import bookCovers from "./books";
 import BookList from "./BookList";
 import Loading from "./Loading";
-import { getRandom1to5, getHumanReadableDate } from "./utils";
+
+import { useQuery } from "@apollo/client";
+import { useParams } from "react-router-dom";
+
+import bookCovers from "./books";
+import { GET_BOOK } from "./queries";
+import { getRandomFromTo, getHumanReadableDate } from "./utils";
+
+import styles from "./styles/BookPageStyles";
+import { withStyles } from "@material-ui/styles";
 
 function BookPage({ classes }) {
   const { id } = useParams();
@@ -68,7 +71,7 @@ function BookPage({ classes }) {
               </div>
             </div>
             <div className={classes.bookList}>
-              <BookList oneCol maxBooks={4} page={getRandom1to5()} />
+              <BookList oneCol maxBooks={4} page={getRandomFromTo(1, 5)} />
             </div>
           </section>
         </>

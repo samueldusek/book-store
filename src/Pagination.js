@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./styles/PaginationStyles";
 import classNames from "classnames";
 
-function Pagination({ setPage, classes, isSmall, page }) {
+function Pagination({ setPage, classes, isSmall, page, purpose }) {
   const buttons = [];
 
   for (let idx = 1; idx <= 5; idx++) {
@@ -22,6 +22,7 @@ function Pagination({ setPage, classes, isSmall, page }) {
 
   return (
     <nav
+      aria-label={`Pagination for ${purpose}.`}
       className={classNames(classes.Pagination, {
         [classes.PaginationSmall]: isSmall,
       })}

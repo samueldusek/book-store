@@ -18,6 +18,9 @@ const styles = {
     [getSizeMedia.down("md")]: {
       marginBottom: "1rem",
     },
+    [getSizeMedia.down("xs")]: {
+      alignSelf: "start",
+    },
   },
   authors: {
     display: "grid",

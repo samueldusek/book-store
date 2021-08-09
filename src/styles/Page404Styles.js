@@ -6,39 +6,50 @@ const styles = {
     width: "100%",
     display: "flex",
     flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
   heading: {
     fontSize: "4.2rem",
-    margin: "1rem 0px 3rem 0px",
+    margin: "0",
+    textAlign: "center",
     [getSizeMedia.down("md")]: {
       fontSize: "3.2rem",
-      marginBottom: "1.5rem",
     },
     [getSizeMedia.down("sm")]: {
       fontSize: "2.6rem",
-      marginBottom: "1.2rem",
     },
   },
-  main: {
+  subtitle: {
+    margin: "4rem 0",
+    fontSize: "2rem",
+    textAlign: "center",
+    [getSizeMedia.down("sm")]: {
+      fontSize: "1.5rem",
+    },
+  },
+  help: {
     display: "flex",
     flexDirection: "column",
+    alignItems: "center",
     "& p": {
-      lineHeight: "4rem",
-      [getSizeMedia.down("sm")]: {
-        lineHeight: "2rem",
-      },
+      textAlign: "center",
     },
+  },
+  helpLinks: {
+    marginTop: "2rem",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
     "& a": {
-      marginTop: "5rem",
-      width: "30%",
-      minWidth: "200px",
-      margin: "auto",
-      [getSizeMedia.down("md")]: {
-        marginTop: "1rem",
-      },
+      color: "grey",
+      letterSpacing: "0.1rem",
+      textDecoration: "none",
+      transition: "all 0.4s 0s ease-in-out",
+      margin: "0.5rem 1.4rem",
     },
-    "& img": {
-      width: "100%",
+    "& a:hover": {
+      color: "black",
     },
   },
 };

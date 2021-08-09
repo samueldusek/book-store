@@ -1,5 +1,3 @@
-import { getSizeMedia } from "./sizes";
-
 const styles = {
   "@keyframes rotation": {
     from: {

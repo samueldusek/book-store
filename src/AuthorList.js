@@ -1,14 +1,17 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
-import { useQuery } from "@apollo/client";
-import { GET_ALL_AUTHORS } from "./queries";
-import { withStyles } from "@material-ui/styles";
-import styles from "./styles/AuthorListStyles";
-import classNames from "classnames";
-import authorsImgs from "./authors";
 import AuthorCard from "./AuthorCard";
 import Pagination from "./Pagination";
 import Loading from "./Loading";
+import { Redirect } from "react-router-dom";
+
+import { useQuery } from "@apollo/client";
+
+import { GET_ALL_AUTHORS } from "./queries";
+import authorsImgs from "./authors";
+
+import { withStyles } from "@material-ui/styles";
+import styles from "./styles/AuthorListStyles";
+import classNames from "classnames";
 
 function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
   const { loading, error, data } = useQuery(GET_ALL_AUTHORS, {
@@ -29,7 +32,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
       })}
     >
       <h2 className={classes.heading}>
-        {isRow ? "Other top autors" : "Top Authors"}
+        {isRow ? "Other top autors" : "See our authors"}
       </h2>
 
       {loading ? (
@@ -49,7 +52,9 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
         </div>
       )}
 
-      {!isRow && <Pagination setPage={setPage} page={page} isSmall />}
+      {!isRow && (
+        <Pagination setPage={setPage} page={page} isSmall purpose="authors" />
+      )}
     </section>
   );
 }

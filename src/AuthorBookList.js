@@ -1,9 +1,11 @@
 import React from "react";
 import BookCard from "./BookCard";
+
+import bookCovers from "./books";
+
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookListStyles";
 import classNames from "classnames";
-import bookCovers from "./books";
 
 function AuthorBookList({ classes, oneCol, authorBooks, author }) {
   const books = authorBooks.map((book, idx) => ({

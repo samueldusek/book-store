@@ -1,15 +1,18 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import AuthorBookList from "./AuthorBookList";
-import { getRandom1to5, getHumanReadableDate } from "./utils";
-import { useQuery } from "@apollo/client";
-import { GET_AUTHOR } from "./queries";
-import { useParams } from "react-router-dom";
-import authorsImgs from "./authors";
-import { withStyles } from "@material-ui/styles";
-import styles from "./styles/AuthorPageStyles";
 import AuthorList from "./AuthorList";
 import Loading from "./Loading";
+
+import { useQuery } from "@apollo/client";
+import { useParams } from "react-router-dom";
+
+import { GET_AUTHOR } from "./queries";
+import { getRandomFromTo, getHumanReadableDate } from "./utils";
+import authorsImgs from "./authors";
+
+import { withStyles } from "@material-ui/styles";
+import styles from "./styles/AuthorPageStyles";
 
 function AuthorPage({ classes }) {
   const { id } = useParams();
@@ -58,7 +61,7 @@ function AuthorPage({ classes }) {
               <AuthorBookList oneCol authorBooks={books} author={author.name} />
             </div>
           </section>
-          <AuthorList isRow maxAuthors={5} page={getRandom1to5()} />
+          <AuthorList isRow maxAuthors={5} page={getRandomFromTo(1, 5)} />
         </>
       )}
     </main>

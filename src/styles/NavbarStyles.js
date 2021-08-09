@@ -9,9 +9,11 @@ const styles = {
     },
     "& h2 a": {
       textDecoration: "none",
-      color: "black",
+      color: "grey",
+      transition: "all 0.4s 0s ease-in-out",
     },
   },
+  heading: { textTransform: "uppercase", letterSpacing: "0.1rem" },
   link: {
     color: "grey",
     letterSpacing: "0.1rem",

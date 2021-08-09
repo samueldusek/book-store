@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { withStyles } from "@material-ui/styles";
-import styles from "./styles/HomePageStyles";
 import BookList from "./BookList";
 import AuthorList from "./AuthorList";
+
+import { withStyles } from "@material-ui/styles";
+import styles from "./styles/HomePageStyles";
 
 function HomePage({ classes }) {
   const [bookPage, setBookPage] = useState(1);

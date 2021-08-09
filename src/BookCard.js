@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import { getHumanReadableDate } from "./utils";
+
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookCardStyles";
-import { getHumanReadableDate } from "./utils";
 
 function BookCard({ classes, book }) {
   return (
