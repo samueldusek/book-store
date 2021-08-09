@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/book-store/static/css/main.203e7708.chunk.css",
-    "main.js": "/book-store/static/js/main.cb06f676.chunk.js",
-    "main.js.map": "/book-store/static/js/main.cb06f676.chunk.js.map",
+    "main.js": "/book-store/static/js/main.bb6352ab.chunk.js",
+    "main.js.map": "/book-store/static/js/main.bb6352ab.chunk.js.map",
     "runtime-main.js": "/book-store/static/js/runtime-main.7e3e185f.js",
     "runtime-main.js.map": "/book-store/static/js/runtime-main.7e3e185f.js.map",
-    "static/js/2.6197ff13.chunk.js": "/book-store/static/js/2.6197ff13.chunk.js",
-    "static/js/2.6197ff13.chunk.js.map": "/book-store/static/js/2.6197ff13.chunk.js.map",
+    "static/js/2.f7e26ab7.chunk.js": "/book-store/static/js/2.f7e26ab7.chunk.js",
+    "static/js/2.f7e26ab7.chunk.js.map": "/book-store/static/js/2.f7e26ab7.chunk.js.map",
     "static/js/3.50c6da73.chunk.js": "/book-store/static/js/3.50c6da73.chunk.js",
     "static/js/3.50c6da73.chunk.js.map": "/book-store/static/js/3.50c6da73.chunk.js.map",
     "index.html": "/book-store/index.html",
     "static/css/main.203e7708.chunk.css.map": "/book-store/static/css/main.203e7708.chunk.css.map",
-    "static/js/2.6197ff13.chunk.js.LICENSE.txt": "/book-store/static/js/2.6197ff13.chunk.js.LICENSE.txt",
+    "static/js/2.f7e26ab7.chunk.js.LICENSE.txt": "/book-store/static/js/2.f7e26ab7.chunk.js.LICENSE.txt",
     "static/media/author1.83cd0fc1.svg": "/book-store/static/media/author1.83cd0fc1.svg",
     "static/media/author10.fffefab0.svg": "/book-store/static/media/author10.fffefab0.svg",
     "static/media/author2.eac1db68.svg": "/book-store/static/media/author2.eac1db68.svg",
@@ -22,22 +22,21 @@
     "static/media/author7.58538311.svg": "/book-store/static/media/author7.58538311.svg",
     "static/media/author8.c79d30eb.svg": "/book-store/static/media/author8.c79d30eb.svg",
     "static/media/author9.6ef14e43.svg": "/book-store/static/media/author9.6ef14e43.svg",
-    "static/media/books1.e3722769.png": "/book-store/static/media/books1.e3722769.png",
-    "static/media/books10.a94da1dc.png": "/book-store/static/media/books10.a94da1dc.png",
-    "static/media/books2.afac0524.png": "/book-store/static/media/books2.afac0524.png",
-    "static/media/books3.b37b0541.png": "/book-store/static/media/books3.b37b0541.png",
-    "static/media/books4.64ec885f.png": "/book-store/static/media/books4.64ec885f.png",
-    "static/media/books5.9ec4f05e.png": "/book-store/static/media/books5.9ec4f05e.png",
-    "static/media/books6.512c5fea.png": "/book-store/static/media/books6.512c5fea.png",
-    "static/media/books7.fc605bd2.png": "/book-store/static/media/books7.fc605bd2.png",
-    "static/media/books8.8bd0b444.png": "/book-store/static/media/books8.8bd0b444.png",
-    "static/media/books9.b1eeabc4.png": "/book-store/static/media/books9.b1eeabc4.png",
-    "static/media/logo.16deef9d.svg": "/book-store/static/media/logo.16deef9d.svg"
+    "static/media/books1.5486bfeb.png": "/book-store/static/media/books1.5486bfeb.png",
+    "static/media/books10.e040c899.png": "/book-store/static/media/books10.e040c899.png",
+    "static/media/books2.730cbac3.png": "/book-store/static/media/books2.730cbac3.png",
+    "static/media/books3.af70160f.png": "/book-store/static/media/books3.af70160f.png",
+    "static/media/books4.99533818.png": "/book-store/static/media/books4.99533818.png",
+    "static/media/books5.8f9cb233.png": "/book-store/static/media/books5.8f9cb233.png",
+    "static/media/books6.81e0915f.png": "/book-store/static/media/books6.81e0915f.png",
+    "static/media/books7.bdd35be0.png": "/book-store/static/media/books7.bdd35be0.png",
+    "static/media/books8.be9b7259.png": "/book-store/static/media/books8.be9b7259.png",
+    "static/media/books9.711185bd.png": "/book-store/static/media/books9.711185bd.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7e3e185f.js",
-    "static/js/2.6197ff13.chunk.js",
+    "static/js/2.f7e26ab7.chunk.js",
     "static/css/main.203e7708.chunk.css",
-    "static/js/main.cb06f676.chunk.js"
+    "static/js/main.bb6352ab.chunk.js"
   ]
 }
