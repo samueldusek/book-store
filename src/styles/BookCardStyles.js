@@ -57,10 +57,17 @@ const styles = {
   },
   date: {
     margin: "0.4rem 0",
+    [getSizeMedia.down("md")]: {
+      margin: "0.2rem 0",
+      fontSize: "0.9rem",
+    },
   },
   isbn: {
     margin: "0px",
     color: "lightgrey",
+    [getSizeMedia.down("md")]: {
+      fontSize: "0.9rem",
+    },
   },
   link: {
     textDecoration: "none",

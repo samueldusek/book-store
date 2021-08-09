@@ -11,8 +11,12 @@ function ErrorPage({ classes }) {
         <p>
           Please, try to refresh the page and if it does not help..
           <br />
-          Contact our support team at <br />
-          <strong>hisupport@bookstore.com</strong> 📧
+          Contact our support team at:
+          <br />
+          <strong>
+            📧{" "}
+            <a href="mailto:hisupport@bookstore.com">hisupport@bookstore.com</a>
+          </strong>
           <br />
           Our team is here to help!
         </p>

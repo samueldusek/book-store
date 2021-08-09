@@ -6,10 +6,14 @@ const styles = {
     width: "100%",
     display: "flex",
     flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
   heading: {
     fontSize: "4.2rem",
     margin: "1rem 0px 3rem 0px",
+    textAlign: "center",
+    lineHeight: "3.6rem",
     [getSizeMedia.down("md")]: {
       fontSize: "3.2rem",
       marginBottom: "1.5rem",
@@ -23,9 +27,17 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     "& p": {
-      lineHeight: "4rem",
-      [getSizeMedia.down("sm")]: {
-        lineHeight: "2rem",
+      textAlign: "center",
+      lineHeight: "3rem",
+      "& strong": {
+        padding: "0.4rem 1rem",
+        borderRadius: "12px",
+        background: "#f5f5f5",
+        boxShadow: "-4px -4px 14px #d5d5d5, 4px 4px 14px #ffffff",
+        "& a": {
+          color: "inherit",
+          textDecoration: "none",
+        },
       },
     },
   },
