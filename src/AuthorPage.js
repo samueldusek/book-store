@@ -9,6 +9,7 @@ import authorsImgs from "./authors";
 import { withStyles } from "@material-ui/styles";
 import styles from "./styles/AuthorPageStyles";
 import AuthorList from "./AuthorList";
+import Loading from "./Loading";
 
 function AuthorPage({ classes }) {
   const { id } = useParams();
@@ -23,7 +24,7 @@ function AuthorPage({ classes }) {
   return (
     <main className={classes.AuthorPage}>
       {loading ? (
-        <span>Loading.. 🔄</span>
+        <Loading />
       ) : (
         <>
           <h1 className={classes.heading}>{author.name}</h1>

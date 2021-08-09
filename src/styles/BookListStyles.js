@@ -2,6 +2,8 @@ import { getSizeMedia } from "./sizes";
 
 const styles = {
   BookList: {
+    display: "flex",
+    flexDirection: "column",
     width: "75%",
     [getSizeMedia.down("md")]: {
       width: "100%",
@@ -51,6 +53,7 @@ const styles = {
   },
   BookListFull: {
     width: "100%",
+    flexGrow: "1",
   },
 };
 

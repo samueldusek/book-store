@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import styles from "./styles/BookPageStyles";
 import bookCovers from "./books";
 import BookList from "./BookList";
+import Loading from "./Loading";
 import { getRandom1to5, getHumanReadableDate } from "./utils";
 
 function BookPage({ classes }) {
@@ -36,7 +37,7 @@ function BookPage({ classes }) {
   return (
     <main className={classes.BookPage}>
       {loading ? (
-        <span>Loading.. 🔄</span>
+        <Loading />
       ) : (
         <>
           <h1 className={classes.heading}>{book.title}</h1>

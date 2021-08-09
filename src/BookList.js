@@ -8,6 +8,7 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./styles/BookListStyles";
 import classNames from "classnames";
 import bookCovers from "./books";
+import Loading from "./Loading";
 
 function BookList({ classes, oneCol, maxBooks, page, setPage }) {
   const { loading, error, data } = useQuery(GET_ALL_BOOKS, {
@@ -32,7 +33,7 @@ function BookList({ classes, oneCol, maxBooks, page, setPage }) {
       <h2 className={classes.heading}>{title}</h2>
 
       {loading ? (
-        <span>Loading.. 🔄</span>
+        <Loading />
       ) : (
         <div
           className={classNames(classes.list, {

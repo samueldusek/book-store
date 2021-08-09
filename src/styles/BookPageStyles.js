@@ -85,6 +85,8 @@ const styles = {
   bookList: {
     width: "33%",
     marginLeft: "1%",
+    display: "flex",
+    flexDirection: "column",
     [getSizeMedia.down("lg")]: {
       width: "40%",
       marginLeft: "5%",

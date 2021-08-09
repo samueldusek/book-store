@@ -9,6 +9,7 @@ function Pagination({ setPage, classes, isSmall, page }) {
   for (let idx = 1; idx <= 5; idx++) {
     buttons.push(
       <button
+        key={idx}
         className={classNames(classes.btn, {
           [classes.active]: page === idx,
         })}

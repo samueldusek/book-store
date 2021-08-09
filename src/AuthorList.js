@@ -8,6 +8,7 @@ import classNames from "classnames";
 import authorsImgs from "./authors";
 import AuthorCard from "./AuthorCard";
 import Pagination from "./Pagination";
+import Loading from "./Loading";
 
 function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
   const { loading, error, data } = useQuery(GET_ALL_AUTHORS, {
@@ -32,7 +33,7 @@ function AuthorList({ classes, setPage, page, isRow, maxAuthors }) {
       </h2>
 
       {loading ? (
-        <span>Loading.. 🔄</span>
+        <Loading />
       ) : (
         <div
           className={classNames(classes.authors, {
